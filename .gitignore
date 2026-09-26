@@ -1,0 +1,19 @@
+# Data (2.4 GB, provided by challenge)
+student_resource/dataset/
+__MACOSX/
+.DS_Store
+
+# Generated artifacts (multi-GB, reproducible from notebooks)
+**/cache/
+**/output/
+
+# Python / Jupyter
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db

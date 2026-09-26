@@ -1,0 +1,9 @@
+polars
+numpy
+scikit-learn
+lightgbm
+rapidfuzz
+jellyfish
+unidecode
+joblib
+tqdm
