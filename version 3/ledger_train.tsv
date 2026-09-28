@@ -1,0 +1,27 @@
+step	value	note
+V2 blocking pair completeness (top-50)	0.9732660494167067	""
+L7b pool pair completeness (V2 + dense)	0.9991845168327788	64.8 pairs/S1
+oracle macro F0.5 on the pool	0.999763835231101	""
+L8 student (full pool) + exclusivity + global thr	0.991586106094871	thr=0.70
+L8 pruning recall vs pool	0.9998950291031812	avg M 5.44
+pruned-set pair completeness	0.9990796315379593	""
+oracle macro F0.5 on the pruned set	0.9997435632330608	m_miss 0.0032
+L7a companion OOF AUC	0.8647951840125172	1,382,722 record pairs, pos 0.901
+L7a cluster purity (multi-record clusters)	0.9642185065162651	185,459 clusters, 658,903 records
+L7a cluster completeness (S1 whose matches share one cluster)	0.6281064213821727	""
+L10 Fellegi-Sunter standalone (EM per country) + excl + thr	0.9429244357908615	""
+L10 XGBoost (GPU) + excl + thr	0.9919101418971248	""
+L10 LightGBM + excl + thr	0.9919247377364886	""
+L10 cross-encoder AUC inside band	0.9785700505526154	(xgb AUC in band 0.9774)
+L11 J2 set transformer (repeated CV 3x5) + excl + thr	0.9940789078572192	""
+L11 J3 GBDT stacker (repeated CV) + excl + thr	0.9941905692638342	""
+L11 joint layer: ensemble weight on J2	0.9941905692638342	w_J2=0.0 (logloss J2 0.0247, J3 0.0239)
+L12 ECE of the monotone GBDT calibrator	0.000190446404453653	raw 0.0002 isotonic 0.0001 -> isotonic
+L13 exact components + expected-F0.5	0.9940607708254631	""
+  (reference) V2 exclusivity + expected-F0.5	0.9941059850264792	L13 delta -0.00005 CI [-0.00009, -0.00001] -> plain exclusivity
+L14 learned cost-sensitive policy (repeated CV)	0.9943630584872212	delta vs expected-F +0.00026 CI [+0.00017, +0.00034] repeats [0.99434, 0.9944, 0.99435]
+FINAL V3 OOF macro F0.5 (policy)	0.9943630584872212	""
+  country=india	0.994787746900708	""
+  country=us	0.9940816441262359	""
+  singletons	0.9928445087634667	""
+  non-singletons	0.9944538469446118	""
