@@ -29,3 +29,7 @@ __pycache__/
 .idea/
 Thumbs.db
 version 4/submissions/*/alt_*/
+
+# Final submission package (ZERO_BIAS_submission/): code, docs and the leaderboard file are tracked.
+# output/candidate_pairs.tsv (1.6 GB) stays ignored by the rule above - it is over GitHub's 100 MB file limit.
+!ZERO_BIAS_submission/output/
