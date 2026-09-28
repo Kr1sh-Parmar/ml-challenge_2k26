@@ -3,9 +3,20 @@ student_resource/dataset/
 __MACOSX/
 .DS_Store
 
-# Generated artifacts (multi-GB, reproducible from notebooks)
+# Generated artifacts (multi-GB, reproducible from the code in each version)
 **/cache/
 **/output/
+**/cache*/
+**/output*/
+**/models*/
+**/logs/
+*.log
+
+# Large result files (> GitHub's 100 MB limit, or regenerable from src/ scripts)
+**/candidate_pairs.tsv
+version 4/submissions/final_combos/
+version 4/submissions/probes/
+version 4/submissions/*/probe_france_empty/
 
 # Python / Jupyter
 .venv/
@@ -17,3 +28,4 @@ __pycache__/
 .vscode/
 .idea/
 Thumbs.db
+version 4/submissions/*/alt_*/
