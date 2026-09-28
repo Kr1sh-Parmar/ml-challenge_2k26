@@ -19,6 +19,12 @@ Challenge brief and rules: [`student_resource/README.md`](student_resource/READM
 
 Submission files: `version 4/submissions/v4.1 … v5/matching_results.tsv`, `final_submission/final_matching_results.tsv`.
 
+## Final submission package (team ZERO BIAS)
+[`ZERO_BIAS_submission/`](ZERO_BIAS_submission/) follows the organisers' zip layout: `output/matching_results.tsv` (the
+leaderboard file), `code/business_entity_resolution/` (self-contained pipeline with README and pinned requirements) and the
+filled-in `Documentation_template.md`. `output/candidate_pairs.tsv` (1.6 GB, 124M pairs) is not in git — it exceeds GitHub's
+100 MB file limit; regenerate it with `python rebuild_candidates.py` (see the package README, ~35 min on CPU).
+
 ## Environment
 - Python 3.11, CUDA GPU (developed on an RTX A4000 16 GB, 64 GB RAM).
 - `pip install -r requirements.txt` plus, for V3+: `torch` (CUDA build), `transformers`, `xgboost`, `sentencepiece`
